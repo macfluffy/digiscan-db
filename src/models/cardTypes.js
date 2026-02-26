@@ -1,7 +1,7 @@
 import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../index';
 
-// This is the card type found on the top of a digimon card
+// These are the card types that can be found on the top of a digimon card
 class CardTypes extends Model {}
 
 CardTypes.init(
