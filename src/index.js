@@ -1,5 +1,5 @@
 import express from 'express';
-// const express = require('express');
+import { Sequelize } from 'sequelize';
 
 const app = express();
 const PORT = 3000;
@@ -11,5 +11,9 @@ app.get('/', (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
 });
+
+
+// Create an instance of sequelize and pass a connection to the PostgreSQL URI 
+export const sequelize = new Sequelize('postgres://user:pass@example.com:5432/dbname');
 
 export default app;
