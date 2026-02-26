@@ -5,6 +5,8 @@ import { Cards } from './cards';
 import { CardTypes } from './cardTypes';
 
 // This is the card type(s) printed on a specific card
+// as cards can now have more than one type post BT25 
+// set release
 export class CardTyping extends Model {}
 
 CardTyping.init(
