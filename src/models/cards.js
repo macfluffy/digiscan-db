@@ -2,7 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../index';
 
 // This represents the digimon card object and the many singular values it contains
-class Cards extends Model {}
+export class Cards extends Model {}
 
 Cards.init(
     {

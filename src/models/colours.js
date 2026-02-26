@@ -2,7 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../index';
 
 // This represents all the colours in Digimon
-class Colours extends Model {}
+export class Colours extends Model {}
 
 Colours.init(
     {

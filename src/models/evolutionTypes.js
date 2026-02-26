@@ -2,7 +2,7 @@ import { Model, DataTypes } from 'sequelize';
 import { sequelize } from '../index';
 
 // This represents all the modes a digimon can evolve
-class EvolutionTypes extends Model {}
+export class EvolutionTypes extends Model {}
 
 EvolutionTypes.init(
     {
