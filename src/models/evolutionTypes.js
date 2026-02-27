@@ -16,11 +16,14 @@ EvolutionTypes.init(
                 'trait',
                 'warp',
                 'tamer',
+                'DNA',
+                'appFusion',
                 'arts'
             ],
         },
     },
     {
+        // Other model options:
         sequelize,
         modelName: 'EvolutionTypes',
     },
