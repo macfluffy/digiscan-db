@@ -31,31 +31,38 @@ http://localhost:4000/docs
 
 # Installation Instructions
 
-    1. Clone the repo
+1. Clone the repo
+```
+git clone https://github.com/macfluffy/digiscan-db.git
+```
 
-    ```git clone https://github.com/macfluffy/digiscan-db.git```
+2. Install dependencies
+```
+npm install
+```
 
-    2. Install dependencies
+3. Create .env
+```
+DATABASE_URL="postgres://<user>:<password>@localhost:5432/digiscan-db"
+JWT_SECRET="YOUR_JWT_SECRET"
+```
 
-    ```npm install```
+4. Setup local Postgres database (CLI command)
+```
+createdb DigiScan
+```
 
-    3. Create .env
+Alternatively (in PostgreSQL):
+```
+CREATE DATABASE "DigiScan";
+```
 
-    ```DATABASE_URL="postgres://<user>:<password>@localhost:5432/digiscan-db"
-    JWT_SECRET="YOUR_JWT_SECRET"```
+5. Seed the database
+```
+npm run seed
+```
 
-    4. Setup local Postgres database (CLI command)
-
-    ```createdb DigiScan```
-
-    Alternatively (in PostgreSQL):
-
-    ```CREATE DATABASE "DigiScan";```
-
-    5. Seed the database
-
-    ```npm run seed```
-
-    6. Start the API
-
-    ```npm run dev```
+6. Start the API
+```
+npm run dev
+```
