@@ -26,6 +26,9 @@ CardCostings.init(
                 key: 'id',
             },
         },
+        cardCost: {
+            type: DataTypes.INTEGER,
+        },
     },
     {
         // Other model options:
