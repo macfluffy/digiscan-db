@@ -28,3 +28,34 @@ http://localhost:4000/docs
 | [Cors](https://github.com/expressjs/cors#readme) | Tells browsers the origins of the request/responses |
 | [Express-Rate-Limit](https://github.com/express-rate-limit/express-rate-limit) | Limit the number of repeated requests to the API |
 | [Helmet](https://helmetjs.github.io/) | Secures express apps by setting HTTP headers |
+
+# Installation Instructions
+
+    1. Clone the repo
+
+    ```git clone https://github.com/macfluffy/digiscan-db.git```
+
+    2. Install dependencies
+
+    ```npm install```
+
+    3. Create .env
+
+    ```DATABASE_URL="postgres://<user>:<password>@localhost:5432/digiscan-db"
+    JWT_SECRET="YOUR_JWT_SECRET"```
+
+    4. Setup local Postgres database (CLI command)
+
+    ```createdb DigiScan```
+
+    Alternatively (in PostgreSQL):
+
+    ```CREATE DATABASE "DigiScan";```
+
+    5. Seed the database
+
+    ```npm run seed```
+
+    6. Start the API
+
+    ```npm run dev```
