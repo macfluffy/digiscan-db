@@ -2,11 +2,14 @@
 Digiscan is a search engine for the Digimon 2020 Trading Card Game. Built with Node.JS, Express, Sequelize and PostgreSQL, this API is used to handle the CRUD requests to our PostgreSQL database.
 
 # Repositories
+| Project | Link |
+|---------|------|
 | Backend | https://github.com/macfluffy/digiscan-db.git |
 | Frontend | https://github.com/macfluffy/digiscan-ui.git |
 
 # Documentation
-You can access the 
+You can access the API documentation on your local device, by booting up Swagger: 
+http://localhost:4000/docs
 
 # Dependencies
 | Name | Description |
