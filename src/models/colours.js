@@ -22,6 +22,7 @@ Colours.init(
         },
     },
     {
+        // Other model options:
         sequelize,
         modelName: 'Colours',
     },

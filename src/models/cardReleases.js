@@ -33,6 +33,6 @@ CardReleases.init(
     },
 );
 
-// Define the many-to-many relationship between cards and card types
-Cards.belongsToMany(CardSets, { through: CardTyping });
-CardSets.belongsToMany(Cards, { through: CardTyping });
+// Define the many-to-many relationship between cards and card sets
+Cards.belongsToMany(CardSets, { through: CardReleases });
+CardSets.belongsToMany(Cards, { through: CardReleases });

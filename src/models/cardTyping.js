@@ -28,6 +28,7 @@ CardTyping.init(
         },
     },
     {
+        // Other model options:
         sequelize,
         modelName: 'CardTyping',
     },
