@@ -34,6 +34,6 @@ CardSpecialPrinting.init(
     },
 );
 
-// Define the many-to-many relationship between cards and card frames
+// Define the many-to-many relationship between cards and card treatments
 Cards.belongsToMany(CardTreatments, { through: CardSpecialPrinting });
 CardTreatments.belongsToMany(Cards, { through: CardSpecialPrinting });
