@@ -14,7 +14,7 @@ CostTypes.init(
             type: DataTypes.ENUM,
             values: [
                 'play', 
-                'use', 
+                'use'
             ],
         },
     },
