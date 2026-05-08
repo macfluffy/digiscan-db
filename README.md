@@ -14,7 +14,6 @@ http://localhost:4000/docs
 # Dependencies
 | Name | Description |
 |------|-------------|
-| [dotenv](https://github.com/motdotla/dotenv#readme) | Loading environment files from the host server's .env files |
 | [Express](https://expressjs.com/) | Web framework to build our backend server  |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken#readme) | Create tokens to authorize user access |
 | [pg](https://node-postgres.com/) | Node.JS modules for interfacing with PostgreSQL | 
