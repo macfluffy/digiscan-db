@@ -4,6 +4,9 @@ import { config } from './config/index.js';
 
 const app = express();
 
+// Middlewares
+app.use(express.json()); // Parse JSON bodies
+
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
