@@ -16,9 +16,9 @@ http://localhost:4000/docs
 |------|-------------|
 | [Express](https://expressjs.com/) | Web framework to build our backend server  |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken#readme) | Create tokens to authorize user access |
-| [pg](https://node-postgres.com/) | Node.JS modules for interfacing with PostgreSQL | 
+| [pg](https://node-postgres.com/) | Database driver. It is used for Node.JS modules interfacing with PostgreSQL | 
 | [pg-hstore](https://github.com/scarney81/pg-hstore) | Converts json into h-store format. Required for Sequelize |
-| [Sequelize](https://sequelize.org/docs/v6/) | A Node.JS ORM tool compatible with our Postgres database. Requires Node v10+ |
+| [Sequelize](https://sequelize.org/docs/v6/) | An ORM tool for complex data queries for the Node.JS application with the Postgres database. Requires Node v10+ |
 | [swagger](https://swagger.io/) | Automate API documentation |
 
 ## Middlewares
