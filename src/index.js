@@ -12,6 +12,15 @@ app.get('/', (req, res) => {
 });
 
 // Connect to the database using Sequelize
-export const sequelize = new Sequelize(config.databaseURI);
+export const sequelize = new Sequelize(
+    config.databaseName,
+    config.databaseUser,
+    config.databasePassword,
+    {
+        host: config.databaseHost,
+        dialect: 'postgres',
+        port: config.databasePort,
+    }
+);
 
 export default app;

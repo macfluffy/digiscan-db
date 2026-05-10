@@ -1,7 +1,7 @@
 import app from './index.js';
 import { config } from './config/index.js';
 
-const PORT = config.port;
+const PORT = config.serverPort;
 
 app.listen(PORT, () => {
     console.log(`Server is running on port: ${PORT}`);
