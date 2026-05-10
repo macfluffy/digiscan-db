@@ -15,6 +15,7 @@ http://localhost:4000/docs
 | Name | Description |
 |------|-------------|
 | [Express](https://expressjs.com/) | Web framework to build our backend server  |
+| [jest](https://jestjs.io/) | JavaScript testing framework for performing tests on the code before feature merges and deployment |
 | [jsonwebtoken](https://github.com/auth0/node-jsonwebtoken#readme) | Create tokens to authorize user access |
 | [pg](https://node-postgres.com/) | Database driver. It is used for Node.JS modules interfacing with PostgreSQL | 
 | [pg-hstore](https://github.com/scarney81/pg-hstore) | Converts json into h-store format. Required for Sequelize |
