@@ -1,6 +1,4 @@
 import express from 'express';
-import { Sequelize } from 'sequelize';
-import { config } from './config/index.js';
 
 const app = express();
 
