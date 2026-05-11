@@ -20,7 +20,8 @@ http://localhost:4000/docs
 | [pg](https://node-postgres.com/) | Database driver. It is used for Node.JS modules interfacing with PostgreSQL | 
 | [pg-hstore](https://github.com/scarney81/pg-hstore) | Converts json into h-store format. Required for Sequelize |
 | [Sequelize](https://sequelize.org/docs/v6/) | An ORM tool for complex data queries for the Node.JS application with the Postgres database. Requires Node v10+ |
-| [swagger](https://swagger.io/) | Automate API documentation |
+| [Sequelize-CLI](https://github.com/sequelize/cli) | Used for database Migrations. Useful for safe database maintenance, rollbacks, and version logs of the digiscan database. |
+| [swagger](https://swagger.io/) | Automates API documentation |
 
 ## Middlewares
 | Name | Description |
