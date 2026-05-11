@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../index';
+import { sequelize } from '../config/database/database';
 
 // This is the product or packs in which the cards are found in
 // Some items like promo packs do not have a set number

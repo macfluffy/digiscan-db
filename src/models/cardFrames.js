@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../index';
+import { sequelize } from '../config/database/database';
 
 // This is the border, the frame, or the template of the card 
 export class CardFrames extends Model {}

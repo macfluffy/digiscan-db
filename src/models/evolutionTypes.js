@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../index';
+import { sequelize } from '../config/database/database';
 
 // This represents all the modes a digimon can evolve
 export class EvolutionTypes extends Model {}

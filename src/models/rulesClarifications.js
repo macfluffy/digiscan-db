@@ -1,5 +1,5 @@
 import { Model, DataTypes } from "sequelize";
-import { sequelize } from "../index";
+import { sequelize } from "../config/database/database";
 
 export class RulesClarifications extends Model {}
 

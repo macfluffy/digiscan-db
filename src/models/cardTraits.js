@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../index';
+import { sequelize } from '../config/database/database';
 
 // These are the traits that can be found on the bottom of a card.
 // There are too many traits being added to the game, using ENUM

@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../index';
+import { sequelize } from '../config/database/database';
 
 // These are the different costs associated with playing a card,
 // referencing the use cost for options and play cost for 

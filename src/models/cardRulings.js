@@ -1,5 +1,5 @@
 import { Model, DataTypes } from "sequelize";
-import { sequelize } from "../index";
+import { sequelize } from "../config/database/database";
 
 import { Cards } from "./cards";
 import { RulesClarifications } from "./rulesClarifications";
