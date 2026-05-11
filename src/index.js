@@ -7,20 +7,8 @@ const app = express();
 // Middlewares
 app.use(express.json()); // Parse JSON bodies
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+app.get('/', (request, response) => {
+    response.send('Hello World!');
 });
-
-// Connect to the database using Sequelize
-export const sequelize = new Sequelize(
-    config.databaseName,
-    config.databaseUser,
-    config.databasePassword,
-    {
-        host: config.databaseHost,
-        dialect: 'postgres',
-        port: config.databasePort,
-    }
-);
 
 export default app;
