@@ -40,7 +40,7 @@ cardSetsRouter.get("/:setID", async (request, response) => {
         const cardSet = await CardSets.findByPk(request.params.setID);
         
         if (!cardSet) {
-            response.status(404).end();
+            response.status(404).send("Not found!");
         } 
         else {
             response.status(200).json(cardSet);
@@ -58,7 +58,7 @@ cardSetsRouter.put("/:setID", async (request, response) => {
         const cardSet = await CardSets.findByPk(request.params.setID);
 
         if (!cardSet) {
-            response.status(404).end();
+            response.status(404).send("Not found!");
         } 
         else {
             const { setNumber, setName, blockNumber, printDate } = request.body;
@@ -84,7 +84,7 @@ cardSetsRouter.delete("/:setID", async (request, response) => {
         const cardSet = await CardSets.findByPk(request.params.setID);
 
         if (!cardSet) {
-            response.status(404).end();
+            response.status(404).send("Not found!");
         } 
         else {
             await cardSet.destroy();
