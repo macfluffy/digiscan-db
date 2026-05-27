@@ -1,5 +1,5 @@
-import { CardSets } from "../../../models/cardSets.js";
 import { sequelize } from "../../../config/database.js";
+import { CardSets } from "../../../models/cardSets.js";
 
 const seedData = [
     {
@@ -250,3 +250,5 @@ export const seedCardSetData = async () => {
         await sequelize.close();
     }
 };
+
+seedCardSetData();
