@@ -1,4 +1,5 @@
 const expressPort = process.env.EXPRESS_PORT;
+const databaseDialect = process.env.DATABASE_DIALECT
 
 const databaseURI = process.env.DATABASE_URI;
 const databaseName = process.env.DATABASE_NAME;
@@ -29,26 +30,34 @@ if (expressPort && isNaN(Number(expressPort))) {
 
 export const config = {
     serverPort: Number(expressPort) || 3000,
-    databaseDialect: "postgres",
     
-    databaseURI: databaseURI,
-    databaseName: databaseName,
-    databaseUser: databaseUser,
-    databasePassword: databasePassword,
-    databasePort: Number(databasePort) || 5432,
-    databaseHost: databaseHost,
+    database: {
+        URI: databaseURI,
+        name: databaseName,
+        user: databaseUser,
+        password: databasePassword,
+        port: Number(databasePort) || 5432,
+        host: databaseHost,
+        dialect: databaseDialect,
+    },
 
-    testDatabaseURI: testDatabaseURI,
-    testDatabaseName: testDatabaseName,
-    testDatabaseUser: testDatabaseUser,
-    testDatabasePassword: testDatabasePassword,
-    testDatabasePort: Number(testDatabasePort) || 5432,
-    testDatabaseHost: testDatabaseHost,
+    development: {
+        URI: developmentDatabaseURI,
+        name: developmentDatabaseName,
+        user: developmentDatabaseUser,
+        password: developmentDatabasePassword,
+        port: Number(developmentDatabasePort) || 5432,
+        host: developmentDatabaseHost,
+        dialect: databaseDialect,
+    },
 
-    developmentDatabaseURI: developmentDatabaseURI,
-    developmentDatabaseName: developmentDatabaseName,
-    developmentDatabaseUser: developmentDatabaseUser,
-    developmentDatabasePassword: developmentDatabasePassword,
-    developmentDatabasePort: Number(developmentDatabasePort) || 5432,
-    developmentDatabaseHost: developmentDatabaseHost,
+    test: {
+        URI: testDatabaseURI,
+        name: testDatabaseName,
+        user: testDatabaseUser,
+        password: testDatabasePassword,
+        port: Number(testDatabasePort) || 5432,
+        host: testDatabaseHost,
+        dialect: databaseDialect,
+    }
 };
