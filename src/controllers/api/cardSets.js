@@ -34,10 +34,32 @@ cardSetsRouter.get("/", async (request, response) => {
     }
 });
 
-// READ: One card set
+// READ: One card set by primary key
 cardSetsRouter.get("/:setID", async (request, response) => {
     try {
         const cardSet = await CardSets.findByPk(request.params.setID);
+        
+        if (!cardSet) {
+            response.status(404).send("Not found!");
+        } 
+        else {
+            response.status(200).json(cardSet);
+        }
+    } 
+    catch (error) {
+        console.log(error);
+        response.status(500).send();
+    }
+});
+
+// READ: One card set by set number
+cardSetsRouter.get("/:setNumber", async (request, response) => {
+    try {
+        const cardSet = await CardSets.findOne({ 
+            where: { 
+                setNumber: request.params.setNumber }
+            }
+        );
         
         if (!cardSet) {
             response.status(404).send("Not found!");
