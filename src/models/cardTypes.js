@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
 // These are the card types that can be found on the top of a digimon card
 export class CardTypes extends Model {}
