@@ -1,5 +1,5 @@
-import { Router } from express;
-import { CardSets } from "../../models/cardSets";
+import { Router } from "express";
+import { CardSets } from "../../models/cardSets.js";
 
 export const cardSetsRouter = Router();
 
