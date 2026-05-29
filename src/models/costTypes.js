@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
 // These are the different costs associated with playing a card,
 // referencing the use cost for options and play cost for 
@@ -10,7 +10,7 @@ CostTypes.init(
     {
         // Model attributes:
         // Primary key is already assumed and doesn't need to be defined
-        cardType: {
+        costType: {
             type: DataTypes.ENUM,
             values: [
                 'play', 
