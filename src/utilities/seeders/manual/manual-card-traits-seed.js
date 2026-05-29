@@ -333,6 +333,8 @@ const seedData = [
     { cardTrait: 'Offline' },
     { cardTrait: 'Logoff' },
     { cardTrait: 'Forced Termination' },
+    // Promos (Nothing in LM)
+    { cardTrait: 'Tweet' },
     // EX12 (Nothing in ST23, ST24)
 ];
 
