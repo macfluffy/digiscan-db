@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
 // These are the different printings of a card
 export class CardTreatments extends Model {}
@@ -8,7 +8,7 @@ CardTreatments.init(
     {
         // Model attributes:
         // Primary key is already assumed and doesn't need to be defined
-        cardType: {
+        treatment: {
             type: DataTypes.ENUM,
             values: [
                 'regular',
