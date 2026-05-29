@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
 // This represents all the modes a digimon can evolve
 export class EvolutionTypes extends Model {}
@@ -10,7 +10,7 @@ EvolutionTypes.init(
         // Primary key is already assumed and doesn't need to be defined
         evolutionType: {
             type: DataTypes.ENUM,
-            value: [
+            values: [
                 'normal',
                 'name',
                 'trait',
