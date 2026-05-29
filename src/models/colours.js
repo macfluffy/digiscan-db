@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
 // This represents all the colours in Digimon
 export class Colours extends Model {}
@@ -10,7 +10,7 @@ Colours.init(
         // Primary key is already assumed and doesn't need to be defined
         colourName: {
             type: DataTypes.ENUM,
-            value: [
+            values: [
                 'red', 
                 'blue', 
                 'yellow', 
