@@ -1,5 +1,5 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
 // This represents the digimon card object and the many singular values it contains
 export class Cards extends Model {}
