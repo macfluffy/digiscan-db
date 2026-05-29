@@ -238,7 +238,7 @@ export const seedCardSetData = async () => {
         console.log("Database connection established.");
 
         await sequelize.sync({ force: true });
-        console.log("Card Set Table created");
+        console.log("Forcing synchronization.");
 
         await CardSets.bulkCreate(seedData);
         console.log("Card Set table seeded.");
