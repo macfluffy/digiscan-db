@@ -23,7 +23,7 @@ export const seedColoursData = async () => {
         console.log("Colours table seeded.");
     } 
     catch (error) {
-        console.error("Could not initialise Card Types Table: ", error);
+        console.error("Could not initialise Colours Table: ", error);
     }
     finally {
         await sequelize.close();
