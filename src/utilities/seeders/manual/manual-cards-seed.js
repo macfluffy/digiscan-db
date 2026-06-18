@@ -1,5 +1,6 @@
 import { sequelize } from "../../../config/database.js";
 import { Cards } from "../../../models/cards.js";
+
 const seedData = [
     { 
         cardNumber: "ST1-01",
