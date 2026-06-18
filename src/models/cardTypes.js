@@ -13,8 +13,8 @@ CardTypes.init(
             values: [
                 'digiegg', 
                 'digimon', 
-                'tamers', 
-                'options'
+                'tamer', 
+                'option'
             ],
         },
     },
@@ -22,5 +22,6 @@ CardTypes.init(
         // Other model options:
         sequelize,
         modelName: 'CardTypes',
+        underscored: true,
     },
 );
