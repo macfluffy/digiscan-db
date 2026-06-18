@@ -43,5 +43,6 @@ Cards.init(
         // Other model options:
         sequelize,
         modelName: 'Cards',
+        underscored: true,
     },
 );

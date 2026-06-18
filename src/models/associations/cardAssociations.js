@@ -6,16 +6,16 @@ import { CardTyping } from "../cardTyping.js";
 CardTypes.belongsToMany(Cards, 
     { 
         through: CardTyping, 
-        foreignKey: 'card_id', 
-        otherKey: 'type_id',
+        foreignKey: 'cardId', 
+        otherKey: 'typeId',
         sourceKey: 'id' 
     }
 );
 Cards.belongsToMany(CardTypes, 
     { 
         through: CardTyping, 
-        foreignKey: 'card_id', 
-        otherKey: 'type_id' ,
+        foreignKey: 'cardId', 
+        otherKey: 'typeId' ,
         sourceKey: 'id' 
     }
 );
