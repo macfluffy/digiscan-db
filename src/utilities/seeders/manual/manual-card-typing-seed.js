@@ -66,71 +66,72 @@ const seedData = [
     { 
         cardId: 16,
         typeId: 4
-    },
-    { 
-        cardId: 17,
-        typeId: 1
-    },
-    { 
-        cardId: 18,
-        typeId: 2
-    },
-    { 
-        cardId: 19,
-        typeId: 2
-    },
-    { 
-        cardId: 20,
-        typeId: 2
-    },
-    { 
-        cardId: 21,
-        typeId: 2
-    },
-    { 
-        cardId: 22,
-        typeId: 2
-    },
-    { 
-        cardId: 23,
-        typeId: 2
-    },
-    { 
-        cardId: 24,
-        typeId: 2
-    },
-    { 
-        cardId: 25,
-        typeId: 2
-    },
-    { 
-        cardId: 26,
-        typeId: 2
-    },
-    { 
-        cardId: 27,
-        typeId: 2
-    },
-    { 
-        cardId: 28,
-        typeId: 3
-    },
-    { 
-        cardId: 29,
-        typeId: 4
-    },
-    { 
-        cardId: 30,
-        typeId: 4
-    },
-    { 
-        cardId: 31,
-        typeId: 4
-    },
-    { 
-        cardId: 32,
-        typeId: 4
     }
+    // },
+    // { 
+    //     cardId: 17,
+    //     typeId: 1
+    // },
+    // { 
+    //     cardId: 18,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 19,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 20,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 21,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 22,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 23,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 24,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 25,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 26,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 27,
+    //     typeId: 2
+    // },
+    // { 
+    //     cardId: 28,
+    //     typeId: 3
+    // },
+    // { 
+    //     cardId: 29,
+    //     typeId: 4
+    // },
+    // { 
+    //     cardId: 30,
+    //     typeId: 4
+    // },
+    // { 
+    //     cardId: 31,
+    //     typeId: 4
+    // },
+    // { 
+    //     cardId: 32,
+    //     typeId: 4
+    // }
 ];
 
 export const seedCardTypingsData = async () => {
