@@ -12,14 +12,14 @@ export class CardTyping extends Model {}
 CardTyping.init(
     {
         // Model attributes:
-        card_id: {
+        cardId: {
             type: DataTypes.INTEGER,
             references: {
                 model: Cards,
                 key: 'id',
             },
         },
-        type_id: {
+        typeId: {
             type: DataTypes.INTEGER,
             references: {
                 model: CardTypes,
@@ -32,5 +32,6 @@ CardTyping.init(
         sequelize,
         modelName: 'CardTyping',
         timestamps: false,
+        underscored: true,
     },
 );

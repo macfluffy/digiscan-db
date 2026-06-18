@@ -4,132 +4,132 @@ import "../../../models/associations/cardAssociations.js";
 
 const seedData = [
     { 
-        card_id: 1,
-        type_id: 1
+        cardId: 1,
+        typeId: 1
     },
     { 
-        card_id: 1,
-        type_id: 2
+        cardId: 2,
+        typeId: 2
     },
     { 
-        card_id: 2,
-        type_id: 3
+        cardId: 3,
+        typeId: 2
     },
     { 
-        card_id: 2,
-        type_id: 4
+        cardId: 4,
+        typeId: 2
     },
     { 
-        card_id: 2,
-        type_id: 5
+        cardId: 5,
+        typeId: 2
     },
     { 
-        card_id: 3,
-        type_id: 3
+        cardId: 6,
+        typeId: 2
     },
     { 
-        card_id: 3,
-        type_id: 4
+        cardId: 7,
+        typeId: 2
     },
     { 
-        card_id: 3,
-        type_id: 6
+        cardId: 8,
+        typeId: 2
     },
     { 
-        card_id: 4,
-        type_id: 3
+        cardId: 9,
+        typeId: 2
     },
     { 
-        card_id: 4,
-        type_id: 7
+        cardId: 10,
+        typeId: 2
     },
     { 
-        card_id: 4,
-        type_id: 8
+        cardId: 11,
+        typeId: 2
     },
     { 
-        card_id: 5,
-        type_id: 9
+        cardId: 12,
+        typeId: 3
     },
     { 
-        card_id: 5,
-        type_id: 4
+        cardId: 13,
+        typeId: 4
     },
     { 
-        card_id: 5,
-        type_id: 10
+        cardId: 14,
+        typeId: 4
     },
     { 
-        card_id: 6,
-        type_id: 9
+        cardId: 15,
+        typeId: 4
     },
     { 
-        card_id: 6,
-        type_id: 11
+        cardId: 16,
+        typeId: 4
     },
     { 
-        card_id: 6,
-        type_id: 8
+        cardId: 17,
+        typeId: 1
     },
     { 
-        card_id: 7,
-        type_id: 9
+        cardId: 18,
+        typeId: 2
     },
     { 
-        card_id: 7,
-        type_id: 4
+        cardId: 19,
+        typeId: 2
     },
     { 
-        card_id: 7,
-        type_id: 12
+        cardId: 20,
+        typeId: 2
     },
     { 
-        card_id: 8,
-        type_id: 13
+        cardId: 21,
+        typeId: 2
     },
     { 
-        card_id: 8,
-        type_id: 4
+        cardId: 22,
+        typeId: 2
     },
     { 
-        card_id: 8,
-        type_id: 14
+        cardId: 23,
+        typeId: 2
     },
     { 
-        card_id: 9,
-        type_id: 13
+        cardId: 24,
+        typeId: 2
     },
     { 
-        card_id: 9,
-        type_id: 4
+        cardId: 25,
+        typeId: 2
     },
     { 
-        card_id: 9,
-        type_id: 15
+        cardId: 26,
+        typeId: 2
     },
     { 
-        card_id: 10,
-        type_id: 16
+        cardId: 27,
+        typeId: 2
     },
     { 
-        card_id: 10,
-        type_id: 4
+        cardId: 28,
+        typeId: 3
     },
     { 
-        card_id: 10,
-        type_id: 17
+        cardId: 29,
+        typeId: 4
     },
     { 
-        card_id: 11,
-        type_id: 16
+        cardId: 30,
+        typeId: 4
     },
     { 
-        card_id: 11,
-        type_id: 4
+        cardId: 31,
+        typeId: 4
     },
     { 
-        card_id: 11,
-        type_id: 18
+        cardId: 32,
+        typeId: 4
     }
 ];
 
