@@ -34,7 +34,3 @@ CardColourIdentity.init(
         underscored: true,
     },
 );
-
-// Define the many-to-many relationship between cards and colours
-Cards.belongsToMany(Colours, { through: CardColourIdentity });
-Colours.belongsToMany(Cards, { through: CardColourIdentity });
