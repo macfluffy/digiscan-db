@@ -31,6 +31,7 @@ CardColourIdentity.init(
         // Other model options:
         sequelize,
         modelName: 'CardColourIdentity',
+        underscored: true,
     },
 );
 
