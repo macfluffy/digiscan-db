@@ -5,9 +5,9 @@ import { Cards } from './cards';
 import { CardTraits } from './cardTraits';
 
 // This the application of traits on a card
-export class CharacterisingCards extends Model {}
+export class CardTraitings extends Model {}
 
-CharacterisingCards.init(
+CardTraitings.init(
     {
         // Model attributes:
         cardId: {
@@ -28,7 +28,8 @@ CharacterisingCards.init(
     {
         // Other model options:
         sequelize,
-        modelName: 'CharacterisingCards',
+        modelName: 'CardTraitings',
+        underscored: true,
     },
 );
 
