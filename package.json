@@ -4,11 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --env-file=.env src/server.js",
+    "dev": "nodemon --env-file=.env src/server.js",
     "test": "node --experimental-vm-modules --env-file=.env node_modules/.bin/jest",
     "manual-seed": "node --env-file=.env src/utilities/seeders/manual/manual-seed-all.js",
     "type-seed": "node --env-file=.env src/utilities/seeders/manual/manual-card-type-seed.js",
-    "set-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-card-set-seed.js"
+    "set-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-card-set-seed.js",
+    "colour-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-colours-seed.js",
+    "traits-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-card-traits-seed.js"
   },
   "keywords": [],
   "author": "",
