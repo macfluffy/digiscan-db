@@ -59,8 +59,8 @@ Cards.belongsToMany(CardTraits,
     { 
         through: CardTraitings,
         as: 'card_traits',
-        foreignKey: 'traitId',
-        otherKey: 'cardId',
+        foreignKey: 'cardId',
+        otherKey: 'traitId',
         sourceKey: 'id',
         targetKey: 'id'
     }
@@ -69,8 +69,8 @@ CardTraits.belongsToMany(Cards,
     { 
         through: CardTraitings, 
         as: 'cards', 
-        foreignKey: 'cardId',
-        otherKey: 'traitId',
+        foreignKey: 'traitId',
+        otherKey: 'cardId',
         sourceKey: 'id',
         targetKey: 'id'
     }
