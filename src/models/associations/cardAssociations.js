@@ -9,6 +9,7 @@ import { CardColourIdentity } from "../cardColourIdentity.js";
 Cards.belongsToMany(CardTypes, 
     { 
         through: CardTyping, 
+        as: 'cardtypes',
         foreignKey: 'cardId', 
         otherKey: 'typeId' ,
         sourceKey: 'id',
@@ -18,6 +19,7 @@ Cards.belongsToMany(CardTypes,
 CardTypes.belongsToMany(Cards, 
     { 
         through: CardTyping, 
+        as: 'cards',
         foreignKey: 'typeId', 
         otherKey: 'cardId',
         sourceKey: 'id', 
