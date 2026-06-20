@@ -1,8 +1,8 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
-import { Cards } from './cards';
-import { CardTraits } from './cardTraits';
+import { Cards } from './cards.js';
+import { CardTraits } from './cardTraits.js';
 
 // This the application of traits on a card
 export class CardTraitings extends Model {}
