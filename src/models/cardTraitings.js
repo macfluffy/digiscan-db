@@ -32,7 +32,3 @@ CardTraitings.init(
         underscored: true,
     },
 );
-
-// Define the many-to-many relationship between cards and card traits
-Cards.belongsToMany(CardTraits, { through: CharacterisingCards });
-CardTraits.belongsToMany(Cards, { through: CharacterisingCards });
