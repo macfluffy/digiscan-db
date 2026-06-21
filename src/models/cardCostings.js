@@ -34,6 +34,7 @@ CardCostings.init(
         // Other model options:
         sequelize,
         modelName: 'CardCostings',
+        timestamps: false,
         underscored: true,
     },
 );

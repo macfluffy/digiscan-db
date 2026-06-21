@@ -22,5 +22,7 @@ CostTypes.init(
         // Other model options:
         sequelize,
         modelName: 'CostTypes',
+        timestamps: false,
+        underscored: true,
     },
 );

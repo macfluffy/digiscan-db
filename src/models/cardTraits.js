@@ -19,6 +19,7 @@ CardTraits.init(
         // Other model options:
         sequelize,
         modelName: 'CardTraits',
+        timestamps: false,
         underscored: true,
     },
 );
