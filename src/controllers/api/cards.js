@@ -4,6 +4,7 @@ import { Cards } from "../../models/cards.js";
 import { CardTypes } from "../../models/cardTypes.js";
 import { Colours } from "../../models/colours.js";
 import { CardTraits } from "../../models/cardTraits.js";
+import { CostTypes } from "../../models/costTypes.js";
 
 export const cardsRouter = Router();
 
@@ -35,6 +36,12 @@ cardsRouter.get("/", async (request, response) => {
                 as: 'card_traits',
                 attributes: ['cardTrait'],
                 through: { attributes: [] }
+            },
+            {
+                model: CostTypes,
+                as: 'card_costs',
+                attributes: ['costType'],
+                through: { attributes: ['cardCost'] }
             }
         ]
         });
