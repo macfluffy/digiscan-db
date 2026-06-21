@@ -27,7 +27,7 @@ cardsRouter.get("/", async (request, response) => {
                 model: Colours,
                 as: 'colours',
                 attributes: ['colourName'],
-                // required: true,
+                required: true,
                 through: { attributes: [] }
             },
             {
