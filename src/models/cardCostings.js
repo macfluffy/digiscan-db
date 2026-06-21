@@ -1,8 +1,8 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
-import { Cards } from './cards';
-import { CostTypes } from './costTypes';
+import { Cards } from './cards.js';
+import { CostTypes } from './costTypes.js';
 
 // This associates the way a card is played or used. 
 // It also describes how much memory is needed to 
@@ -34,5 +34,6 @@ CardCostings.init(
         // Other model options:
         sequelize,
         modelName: 'CardCostings',
+        underscored: true,
     },
 );
