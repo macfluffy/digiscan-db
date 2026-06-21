@@ -36,7 +36,3 @@ CardCostings.init(
         modelName: 'CardCostings',
     },
 );
-
-// Define the many-to-many relationship between cards and cost types
-Cards.belongsToMany(CostTypes, { through: CardCostings });
-CostTypes.belongsToMany(Cards, { through: CardCostings });

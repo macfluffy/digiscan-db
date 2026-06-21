@@ -2,10 +2,12 @@ import { Cards } from "../cards.js";
 import { CardTypes } from "../cardTypes.js";
 import { Colours } from "../colours.js";
 import { CardTraits } from "../cardTraits.js";
+import { CostTypes } from "../costTypes.js";
 
 import { CardTyping } from "../cardTyping.js";
 import { CardColourIdentity } from "../cardColourIdentity.js";
 import { CardTraitings } from "../cardTraitings.js";
+import { CardCostings } from "../cardCostings.js";
 
 // Card Typing: Cards can have multiple card types thanks to dual cards
 Cards.belongsToMany(CardTypes, 
@@ -52,7 +54,26 @@ Colours.belongsToMany(Cards,
 );
 
 // Card Costing: Cards can have multiple costs and ways to pay
-
+Cards.belongsToMany(CostTypes, 
+    { 
+        through: CardCostings, 
+        as: 'card_costs', 
+        foreignKey: 'cardId',
+        otherKey: 'costId',
+        sourceKey: 'id',
+        targetKey: 'id'
+    }
+);
+CostTypes.belongsToMany(Cards, 
+    { 
+        through: CardCostings, 
+        as: 'cards', 
+        foreignKey: 'costId',
+        otherKey: 'cardId',
+        sourceKey: 'id',
+        targetKey: 'id'
+    }
+);
 
 // Card Traiting: Cards can have multiple traits
 Cards.belongsToMany(CardTraits, 
