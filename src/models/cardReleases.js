@@ -1,8 +1,8 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
-import { Cards } from './cards';
-import { CardSets } from './cardSets';
+import { Cards } from './cards.js';
+import { CardSets } from './cardSets.js';
 
 // This table is showing where the cards can be 
 // obtained or sourced from
@@ -30,9 +30,7 @@ CardReleases.init(
         // Other model options:
         sequelize,
         modelName: 'CardReleases',
+        timestamps: false,
+        underscored: true,
     },
 );
-
-// Define the many-to-many relationship between cards and card sets
-Cards.belongsToMany(CardSets, { through: CardReleases });
-CardSets.belongsToMany(Cards, { through: CardReleases });

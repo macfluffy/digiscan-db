@@ -1,13 +1,16 @@
 import { Cards } from "../cards.js";
+import { CardSets } from "../cardSets.js";
+import { CardTraits } from "../cardTraits.js";
 import { CardTypes } from "../cardTypes.js";
 import { Colours } from "../colours.js";
-import { CardTraits } from "../cardTraits.js";
 import { CostTypes } from "../costTypes.js";
 
-import { CardTyping } from "../cardTyping.js";
 import { CardColourIdentity } from "../cardColourIdentity.js";
-import { CardTraitings } from "../cardTraitings.js";
 import { CardCostings } from "../cardCostings.js";
+import { CardReleases } from "../cardReleases.js";
+import { CardTraitings } from "../cardTraitings.js";
+import { CardTyping } from "../cardTyping.js";
+
 
 // Card Typing: Cards can have multiple card types thanks to dual cards
 Cards.belongsToMany(CardTypes, 
@@ -91,6 +94,28 @@ CardTraits.belongsToMany(Cards,
         through: CardTraitings, 
         as: 'cards', 
         foreignKey: 'traitId',
+        otherKey: 'cardId',
+        sourceKey: 'id',
+        targetKey: 'id'
+    }
+);
+
+// Card Releases: Card Sets contain many Cards
+Cards.belongsToMany(CardSets, 
+    { 
+        through: CardReleases, 
+        as: 'card_sets',
+        foreignKey: 'cardId',
+        otherKey: 'setId',
+        sourceKey: 'id',
+        targetKey: 'id'
+    }
+);
+CardSets.belongsToMany(Cards, 
+    { 
+        through: CardReleases, 
+        as: 'cards',
+        foreignKey: 'setId',
         otherKey: 'cardId',
         sourceKey: 'id',
         targetKey: 'id'
