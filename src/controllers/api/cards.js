@@ -1,9 +1,10 @@
 import { Router } from "express";
 
 import { Cards } from "../../models/cards.js";
+import { CardSets} from "../../models/cardSets.js";
+import { CardTraits } from "../../models/cardTraits.js";
 import { CardTypes } from "../../models/cardTypes.js";
 import { Colours } from "../../models/colours.js";
-import { CardTraits } from "../../models/cardTraits.js";
 import { CostTypes } from "../../models/costTypes.js";
 
 export const cardsRouter = Router();
@@ -69,6 +70,12 @@ cardsRouter.get("/", async (request, response) => {
                 as: 'card_costs',
                 attributes: ['costType'],
                 through: { attributes: ['cardCost'] }
+            },
+            {
+                model: CardSets,
+                as: 'card_sets',
+                attributes: ['setNumber'],
+                through: { attributes: [] }
             }],
             limit: cardsPerPage,
             offset: cardsOnDisplay,
