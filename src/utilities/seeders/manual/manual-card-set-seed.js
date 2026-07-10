@@ -21,6 +21,24 @@ const seedData = [
         printDate: '2020-11-27',
     },
     {
+        setNumber: 'ST1',
+        setName: 'Gaia Red',
+        blockNumber: 0,
+        printDate: '2020-11-27',
+    },
+    {
+        setNumber: 'ST2',
+        setName: 'Cocyutus Blue',
+        blockNumber: 0,
+        printDate: '2020-11-27',
+    },
+    {
+        setNumber: 'ST3',
+        setName: 'Heaven\'s Yellow',
+        blockNumber: 0,
+        printDate: '2020-11-27',
+    },
+    {
         setNumber: 'BT4',
         setName: 'Great Legend',
         blockNumber: 0,
