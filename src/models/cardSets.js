@@ -27,5 +27,6 @@ CardSets.init(
         // Other model options:
         sequelize,
         modelName: 'CardSets',
+        underscored: true,
     },
 );
