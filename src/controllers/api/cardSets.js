@@ -1,4 +1,6 @@
 import { Router } from "express";
+
+import { Cards } from "../../models/cards.js";
 import { CardSets } from "../../models/cardSets.js";
 
 export const cardSetsRouter = Router();
@@ -34,16 +36,29 @@ cardSetsRouter.get("/", async (request, response) => {
     }
 });
 
-// READ: One card set by primary key
-cardSetsRouter.get("/:setID", async (request, response) => {
+// READ: All cards from a single set by name
+cardSetsRouter.get("/:setNumber", async (request, response) => {
     try {
-        const cardSet = await CardSets.findByPk(request.params.setID);
+        const setNumber = request.params.setNumber;
+        const cardsInSet = await Cards.findAll({
+            include: [
+            {
+                model: CardSets,
+                where: { setNumber: setNumber, },
+                as: 'card_sets',
+                attributes: ['setNumber'],
+                through: { attributes: [] }
+            }],
+        });
         
-        if (!cardSet) {
+        if (!cardsInSet) {
             response.status(404).send("Not found!");
         } 
         else {
-            response.status(200).json(cardSet);
+            response.status(200).json({
+                success:true,
+                data: cardsInSet
+            });
         }
     } 
     catch (error) {
@@ -53,26 +68,26 @@ cardSetsRouter.get("/:setID", async (request, response) => {
 });
 
 // READ: One card set by set number
-cardSetsRouter.get("/:setNumber", async (request, response) => {
-    try {
-        const cardSet = await CardSets.findOne({ 
-            where: { 
-                setNumber: request.params.setNumber }
-            }
-        );
+// cardSetsRouter.get("/:setNumber", async (request, response) => {
+//     try {
+//         const cardSet = await CardSets.findOne({ 
+//             where: { 
+//                 setNumber: request.params.setNumber }
+//             }
+//         );
         
-        if (!cardSet) {
-            response.status(404).send("Not found!");
-        } 
-        else {
-            response.status(200).json(cardSet);
-        }
-    } 
-    catch (error) {
-        console.log(error);
-        response.status(500).send();
-    }
-});
+//         if (!cardSet) {
+//             response.status(404).send("Not found!");
+//         } 
+//         else {
+//             response.status(200).json(cardSet);
+//         }
+//     } 
+//     catch (error) {
+//         console.log(error);
+//         response.status(500).send();
+//     }
+// });
 
 // UPDATE: One card set
 cardSetsRouter.put("/:setID", async (request, response) => {
