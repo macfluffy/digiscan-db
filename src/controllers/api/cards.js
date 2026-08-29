@@ -134,7 +134,6 @@ cardsRouter.get("/", async (request, response) => {
             limit: cardsPerPage,
             offset: cardsOnDisplay,
             distinct: true,
-            subQuery: false,
         });
 
         // Send out the response
