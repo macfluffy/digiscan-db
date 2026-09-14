@@ -17,16 +17,22 @@
     "printDate": "2026-03-27"
 },
 {
+    "setNumber": "ST23",
+    "setName": "Digimon Beatbreak",
+    "blockNumber": 6,
+    "printDate": "2026-05-15"
+},
+{
+    "setNumber": "ST24",
+    "setName": "Digimon Data Squad",
+    "blockNumber": 6,
+    "printDate": "2026-05-15"
+},
+{
     "setNumber": "BT25",
     "setName": "Dual Revolution",
     "blockNumber": 6,
     "printDate": "2026-05-22"
-},
-{
-    "setNumber": "ST23",
-    "setName": "Digimon Beatbreak",
-    "blockNumber": 6,
-    "printDate": "2020-11-27"
 },
 {
     "setNumber": "EX12",
