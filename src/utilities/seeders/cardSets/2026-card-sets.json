@@ -1,0 +1,48 @@
+[{
+    "setNumber": "BT24",
+    "setName": "Time Stranger",
+    "blockNumber": 5,
+    "printDate": "2026-01-23"
+},
+{
+    "setNumber": "EX11",
+    "setName": "Dawn of Liberator",
+    "blockNumber": 5,
+    "printDate": "2026-02-13"
+},
+{
+    "setNumber": "AD1",
+    "setName": "Digimon Generation",
+    "blockNumber": 5,
+    "printDate": "2026-03-27"
+},
+{
+    "setNumber": "BT25",
+    "setName": "Dual Revolution",
+    "blockNumber": 6,
+    "printDate": "2026-05-22"
+},
+{
+    "setNumber": "ST23",
+    "setName": "Digimon Beatbreak",
+    "blockNumber": 6,
+    "printDate": "2020-11-27"
+},
+{
+    "setNumber": "EX12",
+    "setName": "Digital World Shambala",
+    "blockNumber": 6,
+    "printDate": "2026-07-03"
+},
+{
+    "setNumber": "BT26",
+    "setName": "Timeless Bonds",
+    "blockNumber": 6,
+    "printDate": "2026-09-04"
+},
+{
+    "setNumber": "EX13",
+    "setName": "Chivalrous XIII",
+    "blockNumber": 6,
+    "printDate": "2026-10-02"
+}]
