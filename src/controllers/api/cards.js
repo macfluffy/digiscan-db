@@ -14,13 +14,13 @@ export const cardsRouter = Router();
 // Transform the value into the correct data type and only
 // filter queries by attributes in here
 const filterConfig = {
-    cardNumber: (value) => value,
+    cardNumber: (value) => ({ [Op.iLike]: `%${value}%` }),
     cardName: (value) => ({ [Op.iLike]: `%${value}%` }),    // Partial match case-insensitive
-    cardText: (value) => value,
-    cardType: (value) => value,
+    cardText: (value) => ({ [Op.iLike]: `%${value}%` }),
+    cardType: (value) => ({ [Op.iLike]: `%${value}%` }),
     level: (value) => Number(value),
     rarity: (value) => value,
-    inheritable: (value) => value,
+    inheritable: (value) => ({ [Op.iLike]: `%${value}%` }),
     power: (value) => Number(value),
     setNumber: (value) => value,
 };
