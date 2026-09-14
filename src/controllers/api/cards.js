@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { Sequelize } from "sequelize";
+import { Op, Sequelize } from "sequelize";
 import { owningModelFinder } from "../../utilities/queryHelper.js";
 
 import { Cards } from "../../models/cards.js";
@@ -15,7 +15,7 @@ export const cardsRouter = Router();
 // filter queries by attributes in here
 const filterConfig = {
     cardNumber: (value) => value,
-    cardName: (value) => value,
+    cardName: (value) => ({ [Op.iLike]: `%${value}%` }),    // Partial match case-insensitive
     cardText: (value) => value,
     cardType: (value) => value,
     level: (value) => Number(value),
