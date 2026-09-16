@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "nodemon --env-file=.env src/server.js",
     "test": "node --experimental-vm-modules --env-file=.env node_modules/.bin/jest",
+    "db:seed": "node --env-file=.env node_modules/.bin/sequelize-cli db:seed:all",
+    "db:migrate": "node --env-file=.env node_modules/.bin/sequelize-cli db:migrate",
     "manual-seed": "node --env-file=.env src/utilities/seeders/manual/manual-seed-all.js",
     "type-seed": "node --env-file=.env src/utilities/seeders/manual/manual-card-type-seed.js",
     "set-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-card-set-seed.js",
