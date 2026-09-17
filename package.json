@@ -10,9 +10,9 @@
     "db:migrate": "node --env-file=.env node_modules/.bin/sequelize-cli db:migrate",
     "manual-seed": "node --env-file=.env src/utilities/seeders/manual/manual-seed-all.js",
     "type-seed": "node --env-file=.env src/utilities/seeders/manual/manual-card-type-seed.js",
-    "set-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-card-set-seed.js",
-    "colour-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-colours-seed.js",
-    "traits-seed":  "node --env-file=.env src/utilities/seeders/manual/manual-card-traits-seed.js"
+    "set-seed": "node --env-file=.env src/utilities/seeders/manual/manual-card-set-seed.js",
+    "colour-seed": "node --env-file=.env src/utilities/seeders/manual/manual-colours-seed.js",
+    "traits-seed": "node --env-file=.env src/utilities/seeders/manual/manual-card-traits-seed.js"
   },
   "keywords": [],
   "author": "",
@@ -23,7 +23,7 @@
     "cors": "^2.8.6",
     "express": "^5.2.1",
     "express-rate-limit": "^8.2.1",
-    "helmet": "^8.1.0",
+    "helmet": "^8.3.0",
     "jsonwebtoken": "^9.0.3",
     "pg": "^8.19.0",
     "pg-hstore": "^2.3.4",
