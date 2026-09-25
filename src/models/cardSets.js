@@ -11,6 +11,7 @@ CardSets.init(
         // Primary key is already assumed and doesn't need to be defined
         setNumber: {
             type: DataTypes.STRING,
+            unique: true,
         },
         setName: {
             type: DataTypes.STRING,
