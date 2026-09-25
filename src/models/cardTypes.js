@@ -16,6 +16,7 @@ CardTypes.init(
                 'tamer', 
                 'option'
             ],
+            unique: true,
         },
     },
     {
