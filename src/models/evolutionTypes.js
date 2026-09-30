@@ -20,6 +20,7 @@ EvolutionTypes.init(
                 'appFusion',
                 'arts'
             ],
+            unique: true,
         },
     },
     {
