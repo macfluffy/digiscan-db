@@ -1,0 +1,10 @@
+[
+    { "evolutionType": "normal" },
+    { "evolutionType": "name" },
+    { "evolutionType": "trait" },
+    { "evolutionType": "warp" },
+    { "evolutionType": "tamer" },
+    { "evolutionType": "DNA" },
+    { "evolutionType": "appFusion" },
+    { "evolutionType": "arts" }
+]
