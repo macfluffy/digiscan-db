@@ -1,0 +1,46 @@
+[
+    { 
+        "cardNumber": "ST1-01",
+        "cardTrait": ["In-Training", "Lesser"]
+    },
+    { 
+        "cardNumber": "ST1-02",
+        "cardTrait": ["Rookie", "Vaccine", "Bird"]
+    },
+    { 
+        "cardNumber": "ST1-03",
+        "cardTrait": ["Rookie", "Vaccine", "Reptile"]
+    },
+    { 
+        "cardNumber": "ST1-04",
+        "cardTrait": ["Rookie", "Data", "Dragon"]
+    },
+    { 
+        "cardNumber": "ST1-05",
+        "cardTrait": ["Champion", "Vaccine", "Giant Bird"]
+    },
+    { 
+        "cardNumber": "ST1-06",
+        "cardTrait": ["Champion", "Virus", "Dragon"]
+    },
+    { 
+        "cardNumber": "ST1-07",
+        "cardTrait": ["Champion", "Vaccine", "Dinosaur"]
+    },
+    { 
+        "cardNumber": "ST1-08",
+        "cardTrait": ["Ultimate", "Vaccine", "Birdkin"]
+    },
+    { 
+        "cardNumber": "ST1-09",
+        "cardTrait": ["Ultimate", "Vaccine", "Cyborg"]
+    },
+    { 
+        "cardNumber": "ST1-10",
+        "cardTrait": ["Mega", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "ST1-11",
+        "cardTrait": ["Mega", "Vaccine", "Dragonkin"]
+    }
+]

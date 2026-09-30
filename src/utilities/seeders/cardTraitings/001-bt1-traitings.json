@@ -1,0 +1,346 @@
+[
+    { 
+        "cardNumber": "BT1-001",
+        "cardTrait": ["In-Training", "Bulb"]
+    },
+    { 
+        "cardNumber": "BT1-002",
+        "cardTrait": ["In-Training", "Baby Dragon"]
+    },
+    { 
+        "cardNumber": "BT1-003",
+        "cardTrait": ["In-Training", "Amphibian"]
+    },
+    { 
+        "cardNumber": "BT1-004",
+        "cardTrait": ["In-Training", "Lesser"]
+    },
+    { 
+        "cardNumber": "BT1-005",
+        "cardTrait": ["In-Training", "Lesser"]
+    },
+    { 
+        "cardNumber": "BT1-006",
+        "cardTrait": ["In-Training", "Mini Angel"]
+    },
+    { 
+        "cardNumber": "BT1-007",
+        "cardTrait": ["In-Training", "Bulb"]
+    },
+    { 
+        "cardNumber": "BT1-008",
+        "cardTrait": ["In-Training", "Lesser"]
+    },
+    { 
+        "cardNumber": "BT1-009",
+        "cardTrait": ["Rookie", "Vaccine", "Mini Dragon"]
+    },
+    { 
+        "cardNumber": "BT1-010",
+        "cardTrait": ["Rookie", "Vaccine", "Reptile"]
+    },
+    { 
+        "cardNumber": "BT1-011",
+        "cardTrait": ["Rookie", "Vaccine", "Dinosaur"]
+    },
+    { 
+        "cardNumber": "BT1-012",
+        "cardTrait": ["Rookie", "Vaccine", "Bird"]
+    },
+    { 
+        "cardNumber": "BT1-013",
+        "cardTrait": ["Rookie", "Data", "Avian"]
+    },
+    { 
+        "cardNumber": "BT1-014",
+        "cardTrait": ["Champion", "Data", "Giant Bird"]
+    },
+    { 
+        "cardNumber": "BT1-015",
+        "cardTrait": ["Champion", "Vaccine", "Dinosaur"]
+    },
+    { 
+        "cardNumber": "BT1-016",
+        "cardTrait": ["Champion", "Data", "Dinosaur"]
+    },
+    { 
+        "cardNumber": "BT1-017",
+        "cardTrait": ["Champion", "Vaccine", "Giant Bird"]
+    },
+    { 
+        "cardNumber": "BT1-018",
+        "cardTrait": ["Champion", "Data", "Fire Dragon"]
+    },
+    { 
+        "cardNumber": "BT1-019",
+        "cardTrait": ["Champion", "Virus", "Dinosaur"]
+    },
+    { 
+        "cardNumber": "BT1-020",
+        "cardTrait": ["Ultimate", "Virus", "Earth Dragon"]
+    },
+    { 
+        "cardNumber": "BT1-021",
+        "cardTrait": ["Ultimate", "Vaccine", "Cyborg"]
+    },
+    { 
+        "cardNumber": "BT1-022",
+        "cardTrait": ["Ultimate", "Vaccine", "Birdkin"]
+    },
+    { 
+        "cardNumber": "BT1-023",
+        "cardTrait": ["Ultimate", "Virus", "Undead"]
+    },
+    { 
+        "cardNumber": "BT1-024",
+        "cardTrait": ["Ultimate", "Virus", "Cyborg"]
+    },
+    { 
+        "cardNumber": "BT1-025",
+        "cardTrait": ["Mega", "Vaccine", "Dragonkin"]
+    },
+    { 
+        "cardNumber": "BT1-026",
+        "cardTrait": ["Mega", "Virus", "Machine Dragon"]
+    },
+    { 
+        "cardNumber": "BT1-027",
+        "cardTrait": ["Rookie", "Free", "Mammal"]
+    },
+    { 
+        "cardNumber": "BT1-028",
+        "cardTrait": ["Rookie", "Data", "Mammal"]
+    },
+    { 
+        "cardNumber": "BT1-029",
+        "cardTrait": ["Rookie", "Data", "Reptile"]
+    },
+    { 
+        "cardNumber": "BT1-030",
+        "cardTrait": ["Rookie", "Vaccine", "Sea Beast"]
+    },
+    { 
+        "cardNumber": "BT1-031",
+        "cardTrait": ["Rookie", "Virus", "Beast"]
+    },
+    { 
+        "cardNumber": "BT1-032",
+        "cardTrait": ["Champion", "Vaccine", "Ice-Snow"]
+    },
+    { 
+        "cardNumber": "BT1-033",
+        "cardTrait": ["Champion", "Vaccine", "Sea Animal"]
+    },
+    { 
+        "cardNumber": "BT1-034",
+        "cardTrait": ["Champion", "Vaccine", "Sea Beast"]
+    },
+    { 
+        "cardNumber": "BT1-035",
+        "cardTrait": ["Champion", "Vaccine", "Beastkin"]
+    },
+    { 
+        "cardNumber": "BT1-036",
+        "cardTrait": ["Champion", "Vaccine", "Beast"]
+    },
+    { 
+        "cardNumber": "BT1-037",
+        "cardTrait": ["Champion", "Data", "Beastkin"]
+    },
+    { 
+        "cardNumber": "BT1-038",
+        "cardTrait": ["Ultimate", "Vaccine", "Puppet"]
+    },
+    { 
+        "cardNumber": "BT1-039",
+        "cardTrait": ["Ultimate", "Vaccine", "Dark Animal"]
+    },
+    { 
+        "cardNumber": "BT1-040",
+        "cardTrait": ["Ultimate", "Vaccine", "Beastkin"]
+    },
+    { 
+        "cardNumber": "BT1-041",
+        "cardTrait": ["Ultimate", "Vaccine", "Sea Beast"]
+    },
+    { 
+        "cardNumber": "BT1-042",
+        "cardTrait": ["Ultimate", "Vaccine", "Machine"]
+    },
+    { 
+        "cardNumber": "BT1-043",
+        "cardTrait": ["Mega", "Data", "Ancient Animal"]
+    },
+    { 
+        "cardNumber": "BT1-044",
+        "cardTrait": ["Mega", "Data", "Cyborg"]
+    },
+    { 
+        "cardNumber": "BT1-045",
+        "cardTrait": ["Rookie", "Virus", "Mammal"]
+    },
+    { 
+        "cardNumber": "BT1-046",
+        "cardTrait": ["Rookie", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "BT1-047",
+        "cardTrait": ["Rookie", "Virus", "Fairy"]
+    },
+    { 
+        "cardNumber": "BT1-048",
+        "cardTrait": ["Rookie", "Data", "Mammal"]
+    },
+    { 
+        "cardNumber": "BT1-049",
+        "cardTrait": ["Rookie", "Vaccine", "Beast"]
+    },
+    { 
+        "cardNumber": "BT1-050",
+        "cardTrait": ["Rookie", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "BT1-051",
+        "cardTrait": ["Champion", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "BT1-052",
+        "cardTrait": ["Champion", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "BT1-053",
+        "cardTrait": ["Champion", "Vaccine", "Angel"]
+    },
+    { 
+        "cardNumber": "BT1-054",
+        "cardTrait": ["Champion", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "BT1-055",
+        "cardTrait": ["Champion", "Vaccine", "Angel"]
+    },
+    { 
+        "cardNumber": "BT1-056",
+        "cardTrait": ["Champion", "Data", "Fairy"]
+    },
+    { 
+        "cardNumber": "BT1-057",
+        "cardTrait": ["Ultimate", "Data", "Shaman"]
+    },
+    { 
+        "cardNumber": "BT1-058",
+        "cardTrait": ["Ultimate", "Vaccine", "Holy Beast"]
+    },
+    { 
+        "cardNumber": "BT1-059",
+        "cardTrait": ["Ultimate", "Data", "Fairy"]
+    },
+    { 
+        "cardNumber": "BT1-060",
+        "cardTrait": ["Ultimate", "Vaccine", "Archangel"]
+    },
+    { 
+        "cardNumber": "BT1-061",
+        "cardTrait": ["Ultimate", "Virus", "Magic Warrior"]
+    },
+    { 
+        "cardNumber": "BT1-062",
+        "cardTrait": ["Mega", "Vaccine", "Authority"]
+    },
+    { 
+        "cardNumber": "BT1-063",
+        "cardTrait": ["Mega", "Vaccine", "Seraph", "Three Great Angels"]
+    },
+    { 
+        "cardNumber": "BT1-064",
+        "cardTrait": ["Rookie", "Virus", "Demon"]
+    },
+    { 
+        "cardNumber": "BT1-065",
+        "cardTrait": ["Rookie", "Virus", "Vegetation"]
+    },
+    { 
+        "cardNumber": "BT1-066",
+        "cardTrait": ["Rookie", "Vaccine", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-067",
+        "cardTrait": ["Rookie", "Data", "Vegetation"]
+    },
+    { 
+        "cardNumber": "BT1-068",
+        "cardTrait": ["Rookie", "Data", "Machine"]
+    },
+    { 
+        "cardNumber": "BT1-069",
+        "cardTrait": ["Champion", "Virus", "Demon"]
+    },
+    { 
+        "cardNumber": "BT1-070",
+        "cardTrait": ["Champion", "Virus", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-071",
+        "cardTrait": ["Champion", "Virus", "Carnivorous Plant"]
+    },
+    { 
+        "cardNumber": "BT1-072",
+        "cardTrait": ["Champion", "Virus", "Vegetation"]
+    },
+    { 
+        "cardNumber": "BT1-073",
+        "cardTrait": ["Champion", "Vaccine", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-074",
+        "cardTrait": ["Champion", "Data", "Vegetation"]
+    },
+    { 
+        "cardNumber": "BT1-075",
+        "cardTrait": ["Ultimate", "Data", "Perfect"]
+    },
+    { 
+        "cardNumber": "BT1-076",
+        "cardTrait": ["Ultimate", "Vaccine", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-077",
+        "cardTrait": ["Ultimate", "Virus", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-078",
+        "cardTrait": ["Ultimate", "Vaccine", "Vegetation"]
+    },
+    { 
+        "cardNumber": "BT1-079",
+        "cardTrait": ["Ultimate", "Data", "Fairy"]
+    },
+    { 
+        "cardNumber": "BT1-080",
+        "cardTrait": ["Mega", "Virus", "Shaman"]
+    },
+    { 
+        "cardNumber": "BT1-081",
+        "cardTrait": ["Mega", "Vaccine", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-082",
+        "cardTrait": ["Mega", "Data", "Fairy"]
+    },
+    { 
+        "cardNumber": "BT1-083",
+        "cardTrait": ["Mega", "Free", "Insectoid"]
+    },
+    { 
+        "cardNumber": "BT1-084",
+        "cardTrait": ["Mega", "Vaccine", "Holy Warrior", "Royal Knight"]
+    },
+    { 
+        "cardNumber": "BT1-114",
+        "cardTrait": ["Ultimate", "Virus", "Cyborg"]
+    },
+    { 
+        "cardNumber": "BT1-115",
+        "cardTrait": ["Champion", "Vaccine", "Mythical Dragon"]
+    }
+]
