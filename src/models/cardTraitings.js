@@ -12,6 +12,7 @@ CardTraitings.init(
         // Model attributes:
         cardId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,           // Both card and trait need to have PK to form the composite key
             references: {
                 model: Cards,
                 key: 'id',
@@ -19,6 +20,7 @@ CardTraitings.init(
         },
         traitId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: CardTraits,
                 key: 'id',
