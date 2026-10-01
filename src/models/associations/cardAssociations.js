@@ -4,12 +4,14 @@ import { CardTraits } from "../cardTraits.js";
 import { CardTypes } from "../cardTypes.js";
 import { Colours } from "../colours.js";
 import { CostTypes } from "../costTypes.js";
+import { EvolutionTypes } from "../evolutionTypes.js";
 
 import { CardColourIdentity } from "../cardColourIdentity.js";
 import { CardCostings } from "../cardCostings.js";
 import { CardReleases } from "../cardReleases.js";
 import { CardTraitings } from "../cardTraitings.js";
 import { CardTyping } from "../cardTyping.js";
+import { EvolutionMethods } from "../evolutionMethods.js";
 
 
 // Card Typing: Cards can have multiple card types thanks to dual cards
@@ -118,6 +120,28 @@ CardSets.belongsToMany(Cards,
         foreignKey: 'setId',
         otherKey: 'cardId',
         sourceKey: 'id',
+        targetKey: 'id'
+    }
+);
+
+// Evolution Methods: Some Digimon cards have many ways to digivolve
+Cards.belongsToMany(EvolutionTypes, 
+    { 
+        through: EvolutionMethods, 
+        as: 'evolution_types', 
+        foreignKey: 'cardId', 
+        otherKey: 'evolutionId', 
+        sourceKey: 'id',
+        targetKey: 'id'
+    }
+);
+EvolutionTypes.belongsToMany(Cards, 
+    { 
+        through: EvolutionMethods, 
+        as: 'cards', 
+        foreignKey: 'evolutionId', 
+        otherKey: 'cardId', 
+        sourceKey: 'id', 
         targetKey: 'id'
     }
 );

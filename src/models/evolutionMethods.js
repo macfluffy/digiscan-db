@@ -10,8 +10,10 @@ export class EvolutionMethods extends Model {}
 EvolutionMethods.init(
     {
         // Model attributes:
+        // Both card and evolution need to have PK to form the composite key
         cardId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: Cards,
                 key: 'id',
@@ -19,6 +21,7 @@ EvolutionMethods.init(
         },
         evolutionId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: EvolutionTypes,
                 key: 'id',
@@ -37,7 +40,3 @@ EvolutionMethods.init(
         modelName: 'EvolutionMethods',
     },
 );
-
-// Define the many-to-many relationship between cards and cost types
-Cards.belongsToMany(EvolutionTypes, { through: EvolutionMethods });
-EvolutionTypes.belongsToMany(Cards, { through: EvolutionMethods });
