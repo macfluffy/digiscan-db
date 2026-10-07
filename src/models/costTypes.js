@@ -16,6 +16,7 @@ CostTypes.init(
                 'play', 
                 'use'
             ],
+            unique: true,
         },
     },
     {
