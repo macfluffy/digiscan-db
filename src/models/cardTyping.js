@@ -12,8 +12,10 @@ export class CardTyping extends Model {}
 CardTyping.init(
     {
         // Model attributes:
+        // Both card and type need to have PK to form the composite key
         cardId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: Cards,
                 key: 'id',
@@ -21,6 +23,7 @@ CardTyping.init(
         },
         typeId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: CardTypes,
                 key: 'id',
