@@ -1,0 +1,66 @@
+[
+    { 
+        "cardNumber": "ST1-01",
+        "cardType": ["digiegg"]
+    },
+    { 
+        "cardNumber": "ST1-02",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-03",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-04",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-05",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-06",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-07",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-08",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-09",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-10",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-11",
+        "cardType": ["digimon"]
+    },
+    { 
+        "cardNumber": "ST1-12",
+        "cardType": ["tamer"]
+    },
+    { 
+        "cardNumber": "ST1-13",
+        "cardType": ["option"]
+    },
+    { 
+        "cardNumber": "ST1-14",
+        "cardType": ["option"]
+    },
+    { 
+        "cardNumber": "ST1-15",
+        "cardType": ["option"]
+    },
+    { 
+        "cardNumber": "ST1-16",
+        "cardType": ["option"]
+    }
+]

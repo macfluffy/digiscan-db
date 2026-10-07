@@ -1,0 +1,102 @@
+[
+    {
+        "cardNumber": "ST1-02",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-03",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-04",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-05",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-06",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-07",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-08",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-09",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-10",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 5", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-11",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red  level 5", 
+                "evolutionCost": 4
+            }
+        ]
+    }
+]

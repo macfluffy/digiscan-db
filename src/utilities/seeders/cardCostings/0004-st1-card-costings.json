@@ -1,0 +1,137 @@
+[
+    {
+        "cardNumber": "ST1-02",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-03",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-04",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-05",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 4
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-06",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 5
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-07",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 5
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-08",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 6
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-09",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 7
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-10",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 10
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-11",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 12
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-12",
+        "costType": [
+            {
+                "type": "play",
+                "cardCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-13",
+        "costType": [
+            {
+                "type": "use",
+                "cardCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-14",
+        "costType": [
+            {
+                "type": "use",
+                "cardCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-15",
+        "costType": [
+            {
+                "type": "use",
+                "cardCost": 6
+            }
+        ]
+    },
+    {
+        "cardNumber": "ST1-16",
+        "costType": [
+            {
+                "type": "use",
+                "cardCost": 8
+            }
+        ]
+    }
+]
