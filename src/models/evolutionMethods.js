@@ -1,8 +1,8 @@
 import { Model, DataTypes } from 'sequelize';
-import { sequelize } from '../config/database/database';
+import { sequelize } from '../config/database.js';
 
-import { Cards } from './cards';
-import { EvolutionTypes } from './evolutionTypes';
+import { Cards } from './cards.js';
+import { EvolutionTypes } from './evolutionTypes.js';
 
 // This associates the way a Digimon can evolve
 export class EvolutionMethods extends Model {}
