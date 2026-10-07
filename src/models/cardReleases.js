@@ -11,8 +11,10 @@ export class CardReleases extends Model {}
 CardReleases.init(
     {
         // Model attributes:
+        // Both card and set need to have PK to form the composite key
         cardId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: Cards,
                 key: 'id',
@@ -20,6 +22,7 @@ CardReleases.init(
         },
         setId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: CardSets,
                 key: 'id',
