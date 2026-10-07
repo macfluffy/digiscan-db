@@ -12,8 +12,10 @@ export class CardColourIdentity extends Model {}
 CardColourIdentity.init(
     {
         // Model attributes:
+        // Both card and colour need to have PK to form the composite key
         cardId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: Cards,
                 key: 'id',
@@ -21,6 +23,7 @@ CardColourIdentity.init(
         },
         colourId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: Colours,
                 key: 'id',
