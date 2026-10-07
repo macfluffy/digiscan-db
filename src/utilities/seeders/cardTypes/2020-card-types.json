@@ -1,6 +1,6 @@
 [
     { "cardType": "digiegg" },
     { "cardType": "digimon" },
-    { "cardType": "tamers" },
-    { "cardType": "options" }
+    { "cardType": "tamer" },
+    { "cardType": "option" }
 ]
