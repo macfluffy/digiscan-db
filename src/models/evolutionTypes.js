@@ -26,6 +26,7 @@ EvolutionTypes.init(
     {
         // Other model options:
         sequelize,
+        timestamps: false,
         modelName: 'EvolutionTypes',
     },
 );
