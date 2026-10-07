@@ -1,0 +1,80 @@
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+import { Cards } from "../../models/cards.js";
+import { EvolutionTypes } from "../../models/evolutionTypes.js";
+import { EvolutionMethods } from "../../models/evolutionMethods.js";
+
+const fileName = fileURLToPath(import.meta.url);
+const dirName = path.dirname(fileName);
+
+export default {
+    async up(queryInterface, Sequelize) {
+        // Define the path where the seed files are kept
+        const folderPath = path.normalize(path.join(dirName, './cardTyping'));
+        const files = fs.readdirSync(folderPath)
+            .filter(f => path.extname(f) === ".json");
+
+        // Create a lookup map for each category
+        const cards = await Cards.findAll({
+            attributes: ["id", "cardNumber"],
+            raw: true,                      // Returns plain objects and not the model
+        });
+
+        const evoTypes = await EvolutionTypes.findAll({
+            attributes: ["id", "evolutionType"],
+            raw: true,
+        });
+
+        const cardIDsFound = new Map(cards.map(card => [card.cardNumber, card.id]));
+        const evoIDsFound = new Map(evoTypes.map(type => [type.evolutionType, type.id]));
+        const todaysDate = new Date();
+        
+        // Read each file and import all the seed data
+        for (const file of files) {
+            const filePath = path.join(folderPath, file);
+            const data = JSON.parse(fs.readFileSync(filePath, "utf8"));
+
+            // Each card has more than 1 trait. This needs to be flattened to create key pairs
+            const records = data.flatMap(row => {
+                const cardId = cardIDsFound.get(row.cardNumber);
+                if (!cardId) throw new Error(`${file}: No card with the number ${row.cardNumber} could be found.`);
+
+                return row.evolutionType.map(typeName => {
+                    const evolutionId = evoIDsFound.get(typeName.type);
+                    if (!evolutionId) throw new Error(`${file}: The evolution type ${typeName} could not be found.`);
+
+                    const evolutionRequirement = typeName.evolutionRequirement;
+                    const evolutionCost = typeName.evolutionCost;
+
+                    return {
+                        cardId,
+                        evolutionId,
+                        evolutionRequirement,
+                        evolutionCost,
+                        createdAt: todaysDate,
+                        updatedAt: todaysDate
+                    };
+                });
+            });
+
+            try {
+                // Ignore duplicate data
+                await EvolutionMethods.bulkCreate(records, { 
+                    ignoreDuplicates: true,
+                });
+
+                console.log(`${file} imported succesful!`);
+            } 
+            catch (errorMessage) {
+                console.error(`Error: Could not import ${file}`, errorMessage);
+                throw errorMessage;
+            }
+        }
+    },
+
+    async down(queryInterface, Sequelize) {
+        await queryInterface.bulkDelete('EvolutionMethods', null, {});
+    }
+};
