@@ -19,6 +19,7 @@ Colours.init(
                 'purple', 
                 'white'
             ],
+            unique: true,
         },
     },
     {
