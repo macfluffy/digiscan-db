@@ -11,6 +11,7 @@ Cards.init(
         // STRING has 255 character limit, TEXT has unlimited length
         cardNumber: {
             type: DataTypes.STRING,
+            unique: true,
         },
         cardName: {
             type: DataTypes.STRING,
