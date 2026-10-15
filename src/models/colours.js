@@ -26,7 +26,7 @@ Colours.init(
         // Other model options:
         sequelize,
         modelName: 'Colours',
-        timestamps: false,
+        timestamps: true,
         underscored: true,
     },
 );

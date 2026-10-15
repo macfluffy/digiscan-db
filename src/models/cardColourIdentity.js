@@ -34,7 +34,8 @@ CardColourIdentity.init(
         // Other model options:
         sequelize,
         modelName: 'CardColourIdentity',
-        timestamps: false,
+        tableName: 'card_colour_identity',  // Don't pluralise this table name
+        timestamps: true,
         underscored: true,
     },
 );

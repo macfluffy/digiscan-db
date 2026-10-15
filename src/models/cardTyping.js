@@ -34,7 +34,7 @@ CardTyping.init(
         // Other model options:
         sequelize,
         modelName: 'CardTyping',
-        timestamps: false,
+        timestamps: true,
         underscored: true,
     },
 );

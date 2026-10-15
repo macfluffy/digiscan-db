@@ -38,5 +38,7 @@ EvolutionMethods.init(
         // Other model options:
         sequelize,
         modelName: 'EvolutionMethods',
+        timestamps: true,
+        underscored: true,
     },
 );

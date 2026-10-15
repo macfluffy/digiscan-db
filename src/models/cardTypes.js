@@ -23,7 +23,7 @@ CardTypes.init(
         // Other model options:
         sequelize,
         modelName: 'CardTypes',
-        timestamps: false,
+        timestamps: true,
         underscored: true,
     },
 );

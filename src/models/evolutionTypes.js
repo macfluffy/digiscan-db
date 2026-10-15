@@ -26,7 +26,8 @@ EvolutionTypes.init(
     {
         // Other model options:
         sequelize,
-        timestamps: false,
         modelName: 'EvolutionTypes',
+        timestamps: true,
+        underscored: true,
     },
 );

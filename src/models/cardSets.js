@@ -27,6 +27,7 @@ CardSets.init(
         // Other model options:
         sequelize,
         modelName: 'CardSets',
+        timestamps: true,
         underscored: true,
     },
 );
