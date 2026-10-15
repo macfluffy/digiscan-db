@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('cost_types', {
@@ -10,12 +8,22 @@ export default {
                 type: Sequelize.INTEGER
             },
             cost_type: {
-                type: DataTypes.ENUM,
+                type: Sequelize.ENUM,
                 values: [
                     'play', 
                     'use'
                 ],
                 unique: true,
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },

@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('card_sets', {
@@ -10,17 +8,27 @@ export default {
                 type: Sequelize.INTEGER
             },
             set_number: {
-                type: DataTypes.STRING,
+                type: Sequelize.STRING,
             },
             set_name: {
-                type: DataTypes.STRING,
+                type: Sequelize.STRING,
             },
             block_number: {
-                type: DataTypes.INTEGER,
+                type: Sequelize.INTEGER,
             },
             print_date: {
                 // Only need the year, month, and day
-                type: DataTypes.DATEONLY,
+                type: Sequelize.DATEONLY,
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },

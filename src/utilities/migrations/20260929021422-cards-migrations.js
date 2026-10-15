@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('cards', {
@@ -11,26 +9,26 @@ export default {
                 type: Sequelize.INTEGER
             },
             card_number: {
-                type: DataTypes.STRING,
+                type: Sequelize.STRING,
                 unique: true,
             },
             card_name: {
-                type: DataTypes.STRING,
+                type: Sequelize.STRING,
             },
             level: {
-                type: DataTypes.INTEGER,
+                type: Sequelize.INTEGER,
             },
             power: {
-                type: DataTypes.INTEGER,
+                type: Sequelize.INTEGER,
             },
             card_text: {
-                type: DataTypes.TEXT,
+                type: Sequelize.TEXT,
             },
             inheritable: {
-                type: DataTypes.TEXT,
+                type: Sequelize.TEXT,
             },
             rarity: {
-                type: DataTypes.ENUM,
+                type: Sequelize.ENUM,
                 values: [
                     'common',
                     'uncommon',
@@ -39,6 +37,16 @@ export default {
                     'ultraRare',
                     'secretRare'
                 ],
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },

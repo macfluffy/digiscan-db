@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('card_types', {
@@ -10,7 +8,7 @@ export default {
                 type: Sequelize.INTEGER
             },
             card_type: {
-                type: DataTypes.ENUM,
+                type: Sequelize.ENUM,
                 values: [
                     'digiegg', 
                     'digimon', 
@@ -18,6 +16,16 @@ export default {
                     'option'
                 ],
                 unique: true,
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },

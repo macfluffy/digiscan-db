@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('card_releases', {
@@ -7,7 +5,7 @@ export default {
             // Ensure models are Strings and not the Cards or CardSets 
             // import in a migration file.
             card_id: {
-                type: DataTypes.INTEGER,
+                type: Sequelize.INTEGER,
                 primaryKey: true,
                 references: {
                     model: 'cards',
@@ -15,12 +13,22 @@ export default {
                 },
             },
             set_id: {
-                type: DataTypes.INTEGER,
+                type: Sequelize.INTEGER,
                 primaryKey: true,
                 references: {
                     model: 'card_sets',
                     key: 'id',
                 },
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },

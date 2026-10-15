@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('evolution_types', {
@@ -11,7 +9,7 @@ export default {
                 type: Sequelize.INTEGER
             },
             evolution_type: {
-                type: DataTypes.ENUM,
+                type: Sequelize.ENUM,
                 values: [
                     'normal',
                     'name',
@@ -23,6 +21,16 @@ export default {
                     'arts'
                 ],
                 unique: true,
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },

@@ -1,5 +1,3 @@
-import { DataTypes, Sequelize } from "sequelize";
-
 export default {
     async up(queryInterface, Sequelize) {
         await queryInterface.createTable('colours', {
@@ -11,7 +9,7 @@ export default {
                 type: Sequelize.INTEGER
             },
             colour_name: {
-                type: DataTypes.ENUM,
+                type: Sequelize.ENUM,
                 values: [
                     'red', 
                     'blue', 
@@ -22,6 +20,16 @@ export default {
                     'white'
                 ],
                 unique: true,
+            },
+            created_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
+            },
+            updated_at: {
+                allowNull: false,
+                type: Sequelize.DATE,
+                defaultValue: Sequelize.literal('CURRENT_TIMESTAMP'),
             },
         });
     },
