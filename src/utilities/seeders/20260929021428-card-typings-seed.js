@@ -28,7 +28,7 @@ export default {
         });
 
         const cardIDsFound = new Map(cards.map(card => [card.cardNumber, card.id]));
-        const traitIDsFound = new Map(types.map(type => [type.cardType, type.id]));
+        const typeIDsFound = new Map(types.map(type => [type.cardType, type.id]));
         const todaysDate = new Date();
         
         // Read each file and import all the seed data
@@ -42,13 +42,12 @@ export default {
                 if (!cardId) throw new Error(`${file}: No card with the number ${row.cardNumber} could be found.`);
 
                 return row.cardType.map(typeName => {
-                    const typeId = traitIDsFound.get(typeName);
+                    const typeId = typeIDsFound.get(typeName);
                     if (!typeId) throw new Error(`${file}: The card type ${typeName} could not be found.`);
 
                     return {
                         cardId,
                         typeId,
-                        createdAt: todaysDate,
                         updatedAt: todaysDate
                     };
                 });
@@ -70,6 +69,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('CardTyping', null, {});
+        await queryInterface.bulkDelete('card_typing', null, {});
     }
 };

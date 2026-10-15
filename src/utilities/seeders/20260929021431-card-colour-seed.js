@@ -35,6 +35,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('Colours', null, {});
+        await queryInterface.bulkDelete('colours', null, {});
     }
 };

@@ -38,6 +38,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('CardTraits', null, {});
+        await queryInterface.bulkDelete('card_traits', null, {});
     }
 };

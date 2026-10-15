@@ -12,7 +12,7 @@ const dirName = path.dirname(fileName);
 export default {
     async up(queryInterface, Sequelize) {
         // Define the path where the seed files are kept
-        const folderPath = path.normalize(path.join(dirName, './cardTyping'));
+        const folderPath = path.normalize(path.join(dirName, './evolutionMethods'));
         const files = fs.readdirSync(folderPath)
             .filter(f => path.extname(f) === ".json");
 
@@ -75,6 +75,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('EvolutionMethods', null, {});
+        await queryInterface.bulkDelete('evolution_methods', null, {});
     }
 };

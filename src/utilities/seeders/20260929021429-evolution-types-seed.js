@@ -35,6 +35,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('EvolutionTypes', null, {});
+        await queryInterface.bulkDelete('evolution_types', null, {});
     }
 };

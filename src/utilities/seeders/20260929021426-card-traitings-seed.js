@@ -70,6 +70,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('CardTraitings', null, {});
+        await queryInterface.bulkDelete('card_traitings', null, {});
     }
 };

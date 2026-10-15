@@ -3,8 +3,8 @@ import path from "path";
 import { fileURLToPath } from "url";
 
 import { Cards } from "../../models/cards.js";
-import { EvolutionTypes } from "../../models/evolutionTypes.js";
-import { EvolutionMethods } from "../../models/evolutionMethods.js";
+import { Colours } from "../../models/colours.js";
+import { CardColourIdentity } from "../../models/cardColourIdentity.js";
 
 const fileName = fileURLToPath(import.meta.url);
 const dirName = path.dirname(fileName);
@@ -12,7 +12,7 @@ const dirName = path.dirname(fileName);
 export default {
     async up(queryInterface, Sequelize) {
         // Define the path where the seed files are kept
-        const folderPath = path.normalize(path.join(dirName, './cardTyping'));
+        const folderPath = path.normalize(path.join(dirName, './cardColourIdentity'));
         const files = fs.readdirSync(folderPath)
             .filter(f => path.extname(f) === ".json");
 
@@ -22,13 +22,13 @@ export default {
             raw: true,                      // Returns plain objects and not the model
         });
 
-        const evoTypes = await EvolutionTypes.findAll({
-            attributes: ["id", "evolutionType"],
+        const colours = await Colours.findAll({
+            attributes: ["id", "colourName"],
             raw: true,
         });
 
         const cardIDsFound = new Map(cards.map(card => [card.cardNumber, card.id]));
-        const evoIDsFound = new Map(evoTypes.map(type => [type.evolutionType, type.id]));
+        const colourIDsFound = new Map(colours.map(type => [type.colourName, type.id]));
         const todaysDate = new Date();
         
         // Read each file and import all the seed data
@@ -41,18 +41,13 @@ export default {
                 const cardId = cardIDsFound.get(row.cardNumber);
                 if (!cardId) throw new Error(`${file}: No card with the number ${row.cardNumber} could be found.`);
 
-                return row.evolutionType.map(typeName => {
-                    const evolutionId = evoIDsFound.get(typeName.type);
-                    if (!evolutionId) throw new Error(`${file}: The evolution type ${typeName} could not be found.`);
-
-                    const evolutionRequirement = typeName.evolutionRequirement;
-                    const evolutionCost = typeName.evolutionCost;
+                return row.colourName.map(colour => {
+                    const colourId = colourIDsFound.get(colour);
+                    if (!colourId) throw new Error(`${file}: The colour ${colour} could not be found.`);
 
                     return {
                         cardId,
-                        evolutionId,
-                        evolutionRequirement,
-                        evolutionCost,
+                        colourId,
                         createdAt: todaysDate,
                         updatedAt: todaysDate
                     };
@@ -61,7 +56,7 @@ export default {
 
             try {
                 // Ignore duplicate data
-                await EvolutionMethods.bulkCreate(records, { 
+                await CardColourIdentity.bulkCreate(records, { 
                     ignoreDuplicates: true,
                 });
 
@@ -75,6 +70,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('EvolutionMethods', null, {});
+        await queryInterface.bulkDelete('card_colour_identity', null, {});
     }
 };

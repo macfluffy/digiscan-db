@@ -35,6 +35,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('CostTypes', null, {});
+        await queryInterface.bulkDelete('cost_types', null, {});
     }
 };

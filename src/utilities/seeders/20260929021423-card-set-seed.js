@@ -40,6 +40,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('CardSets', null, {});
+        await queryInterface.bulkDelete('card_sets', null, {});
     }
 };

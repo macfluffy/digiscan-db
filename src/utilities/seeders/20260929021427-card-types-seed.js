@@ -35,6 +35,6 @@ export default {
     },
 
     async down(queryInterface, Sequelize) {
-        await queryInterface.bulkDelete('CardTypes', null, {});
+        await queryInterface.bulkDelete('card_types', null, {});
     }
 };
