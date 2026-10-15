@@ -1,0 +1,787 @@
+[
+    {
+        "cardNumber": "BT1-009",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-010",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-011",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-012",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-013",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 2", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-014",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-015",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-016",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-017",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-018",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-019",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 3", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-020",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 4", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-021",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-022",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-023",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-024",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-025",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-026",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-027",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 2", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-028",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-029",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-030",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-031",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 2", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-032",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-033",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-034",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-035",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-036",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-037",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-038",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 4", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-039",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-040",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-041",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-042",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-043",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-044",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-045",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-046",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-047",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-048",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-049",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-050",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-051",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-052",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-053",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-054",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 3", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-055",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-056",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-057",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 4", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-058",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-059",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-060",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-061",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-062",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-063",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "yellow level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-064",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-065",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 2", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-066",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-067",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 2", 
+                "evolutionCost": 0
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-068",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 2", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-069",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-070",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-071",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 3", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-072",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-073",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 3", 
+                "evolutionCost": 1
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-074",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 3", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-075",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-076",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 4", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-077",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 4", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-078",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-079",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 4", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-080",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 5", 
+                "evolutionCost": 2
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-081",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-082",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 5", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-083",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "green level 5", 
+                "evolutionCost": 4
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-085",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 6", 
+                "evolutionCost": 6
+            },
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 6", 
+                "evolutionCost": 6
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-114",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "red level 4", 
+                "evolutionCost": 3
+            }
+        ]
+    },
+    {
+        "cardNumber": "BT1-115",
+        "evolutionType": [
+            {
+                "type":"normal", 
+                "evolutionRequirement": "blue level 3", 
+                "evolutionCost": 3
+            }
+        ]
+    }
+]
