@@ -12,8 +12,10 @@ export class CardCostings extends Model {}
 CardCostings.init(
     {
         // Model attributes:
+        // Both card and cost need to have PK to form the composite key
         cardId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: Cards,
                 key: 'id',
@@ -21,6 +23,7 @@ CardCostings.init(
         },
         costId: {
             type: DataTypes.INTEGER,
+            primaryKey: true,
             references: {
                 model: CostTypes,
                 key: 'id',
@@ -34,7 +37,7 @@ CardCostings.init(
         // Other model options:
         sequelize,
         modelName: 'CardCostings',
-        timestamps: false,
+        timestamps: true,
         underscored: true,
     },
 );
