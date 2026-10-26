@@ -18,6 +18,7 @@ const filterConfig = {
     cardName: (value) => ({ [Op.iLike]: `%${value}%` }),    // Partial match case-insensitive
     cardText: (value) => ({ [Op.iLike]: `%${value}%` }),
     cardType: (value) => (value),
+    colourName: (value) => (value),                         // ENUMs cannot be iLike matches
     level: (value) => Number(value),
     rarity: (value) => value,
     inheritable: (value) => ({ [Op.iLike]: `%${value}%` }),
@@ -46,6 +47,7 @@ const associationAttributeConfig = {
 
 // Filterable and readable attributes through junction tables
 const throughAttributeConfig = {
+    Colours: [], 
     CostTypes: ['cardCost'],
 };
 
