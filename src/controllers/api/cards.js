@@ -12,12 +12,12 @@ import { CostTypes } from "../../models/costTypes.js";
 export const cardsRouter = Router();
 
 // Transform the value into the correct data type and only
-// filter queries by attributes in here
+// filter queries by attributes in here.
 const filterConfig = {
     cardNumber: (value) => ({ [Op.iLike]: `%${value}%` }),
     cardName: (value) => ({ [Op.iLike]: `%${value}%` }),    // Partial match case-insensitive
     cardText: (value) => ({ [Op.iLike]: `%${value}%` }),
-    cardType: (value) => ({ [Op.iLike]: `%${value}%` }),
+    cardType: (value) => (value),
     level: (value) => Number(value),
     rarity: (value) => value,
     inheritable: (value) => ({ [Op.iLike]: `%${value}%` }),
